@@ -55,8 +55,6 @@ dcs_type: "etcd"  # or 'consul'
 etcd_version: "3.5.7"  # version for deploy etcd cluster
 etcd_data_dir: "/var/lib/etcd"
 etcd_cluster_name: "etcd-{{ patroni_cluster_name }}"  # ETCD_INITIAL_CLUSTER_TOKEN
-etcd_log_level: info
-# Configures log level. Only supports debug, info, warn, error, panic, or fatal.
 
 # if dcs_type: "etcd" and dcs_exists: true
 patroni_etcd_hosts: []  # list of servers of an existing etcd cluster
